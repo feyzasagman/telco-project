@@ -1,0 +1,16 @@
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: telco-oracle-xe
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: oracle
+      APP_USER: telco_user
+      APP_USER_PASSWORD: telco_password
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    restart: unless-stopped
+
+volumes:
+  oracle-data:

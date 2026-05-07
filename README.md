@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Telco SQL Technical Assessment Project
 
 ## Project Overview
